@@ -6,8 +6,8 @@ import { PropsWithChildren, Suspense } from 'react';
 import { getURL } from '@/utils/helpers';
 import 'styles/main.css';
 
-const title = 'Next.js Subscription Starter';
-const description = 'Brought to you by Vercel, Stripe, and Supabase.';
+const title = 'ShareYourAI - Claude Code Sharing Marketplace';
+const description = 'Share your unused Claude Max subscription and earn. Get affordable Claude Code access.';
 
 export const metadata: Metadata = {
   metadataBase: new URL(getURL()),

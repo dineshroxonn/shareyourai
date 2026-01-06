@@ -1,0 +1,20 @@
+services:
+  - type: web
+    name: shareyourai-proxy
+    runtime: node
+    region: oregon
+    plan: free
+    buildCommand: npm install && npm run build
+    startCommand: npm start
+    envVars:
+      - key: SUPABASE_URL
+        sync: false
+      - key: SUPABASE_SERVICE_ROLE_KEY
+        sync: false
+      - key: ENCRYPTION_KEY
+        sync: false
+      - key: PORT
+        value: 3001
+      - key: HOST
+        value: 0.0.0.0
+    healthCheckPath: /health
